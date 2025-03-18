@@ -3,10 +3,12 @@ public class AtividadeIdade {
         int idade = 19;
         if (idade >= 18) {
             System.out.print("Adulto");
-        } else if (idade >= 6) {
-            System.out.print("Adolescente");
         } else {
-            System.out.print("Infantil");
+            if (idade >= 6) {
+                System.out.print("Adolescente");
+            } else {
+                System.out.print("Infantil");
+            }
         }
     }
 }
