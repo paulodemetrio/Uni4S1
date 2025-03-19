@@ -25,7 +25,7 @@ public class Calculadora {
         } else if (op == '*') {
             result = num1 * num2;
             System.out.println("Resultado: " + df.format(result));
-        } else if (op == '/') {
+        } else if (op == '/' && (num1 != 0 || num2 != 0)) {
             result = num1 / num2;
             System.out.println("Resultado: " + df.format(result));
         } else {
